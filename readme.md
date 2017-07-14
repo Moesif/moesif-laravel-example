@@ -15,7 +15,7 @@ standard files of Laravel app.
 
 - `app/Http/Kernel.php` added Moesif middleware.
 
-- `config/moesif.php` this is the settings for Moesif Middleware.
+- `config/moesif.php` this is the settings for Moesif Middleware with example options.
 
 If you are going to run this example, please remember to go to `config/moesif.php`
 and update with application id with your actual application id.

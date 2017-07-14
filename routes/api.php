@@ -26,6 +26,10 @@ Route::get('/thirdapi', function (Request $request) {
     return new JsonResponse(["foo" => 1, "bar" => [1, 2, 3]]);
 });
 
+Route::get('/shouldskip', function (Request $request) {
+    return new JsonResponse(["testingskip" => 1, "testingbar" => [1, 2, 3]]);
+});
+
 Route::post('/postapi', function (Request $request) {
   return new JsonResponse(["success" => 1]);
 });

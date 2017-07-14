@@ -75,8 +75,21 @@ $addTags = function($request, $response) {
     return 'nada, profile';
 };
 
+/**
+ * If you want to define a skip function.
+ *
+ */
+$skip = function($request, $response) {
+  $myurl = $request->fullUrl();
+  // a hacky way to check if string contains:
+  if (strpos($myurl, 'shouldskip') !== false) {
+    return true;
+  }
+  return false;
+};
+
 return [
-    'applicationId' => 'Please replace with your application id',
+    'applicationId' => 'your application id',
     'maskRequestHeaders' => $maskRequestHeaders,
     'maksRequestBody' => $maskRequestBody,
     'maskResponseHeaders' => $maskResponseHeaders,
@@ -85,5 +98,6 @@ return [
     'identifySessionId' => $identifySessionId,
     'apiVersion' => '1.2.2',
     'debug' => true,
-    'addTags' => $addTags
+    'addTags' => $addTags,
+    'skip' => $skip
 ];
