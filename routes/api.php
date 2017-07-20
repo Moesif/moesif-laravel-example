@@ -19,7 +19,7 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:api');
 
 Route::get('/firstapi', function (Request $request) {
-    return new JsonResponse( [["foo" => 1, "bar" => [1, 2, 3]], 200, array()]);
+    return new JsonResponse([["foo" => 1, "bar" => [1, 2, 3]], ["type2" => 200], ["arrraytype3" => array()]]);
 });
 
 Route::get('/thirdapi', function (Request $request) {
