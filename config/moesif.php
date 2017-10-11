@@ -53,6 +53,10 @@ $identifyUserId = function($request, $response) {
     }
 };
 
+$getMetadata = function($request, $response) {
+  return array("foo"=>"laravel example", "boo"=>"custom data here");
+};
+
 /**
  * Use this function to find tokenId . If your app differs from standard lararvel for tokenIds.
  *
@@ -89,12 +93,13 @@ $skip = function($request, $response) {
 };
 
 return [
-    'applicationId' => 'your application id',
+    'applicationId' => 'your application id goes here',
     'maskRequestHeaders' => $maskRequestHeaders,
     'maksRequestBody' => $maskRequestBody,
     'maskResponseHeaders' => $maskResponseHeaders,
     'maskResponseBody' => $maskResponseBody,
     'identifyUserId' => $identifyUserId,
+    'getMetadata' => $getMetadata,
     'identifySessionId' => $identifySessionId,
     'apiVersion' => '1.2.2',
     'debug' => true,

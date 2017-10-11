@@ -22,7 +22,9 @@ and update with application id with your actual application id.
 
 ## How to run.
 
-Please follow standard [Homestead setup instructions](https://laravel.com/docs/4.2/homestead) from Laravel
+Step 1: Install all dependencies by `composer install` or `composer update`. See [composer](https://getcomposer.org) for more information. 
+
+Step 2: Please follow standard [Homestead setup instructions](https://laravel.com/docs/4.2/homestead) from Laravel
 
 There are several routes for testing APIs and none JSON webpages.
-Please see `routes/api.php` for available routes for testing.  
+Please see `routes/api.php` for available routes for testing.
