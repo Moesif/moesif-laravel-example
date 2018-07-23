@@ -31,4 +31,18 @@ class MoesifTestApiController extends Controller
             "state" => "dude"
         ]);
     }
+
+    public function bigjson()
+    {
+      // we only support body size up to 100Kb.
+      // so 2000 entries works. but
+      // 3000 entries and above probalby wont work
+      $entry = [
+        "myname" => "xing",
+        "state" => "dude"
+      ];
+      $result = array_fill(0, 2000, $entry);
+
+      return new JsonResponse($result);
+    }
 }

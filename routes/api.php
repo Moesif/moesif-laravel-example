@@ -45,3 +45,5 @@ Route::get('/test/{v}', 'MoesifTestApiController@index');
 Route::get('/test/table/{v}', 'MoesifTestApiController@table');
 
 Route::post('/test/table/{v}', 'MoesifTestApiController@table');
+
+Route::get('/bigjson', 'MoesifTestApiController@bigjson');
