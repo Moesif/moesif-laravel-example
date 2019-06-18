@@ -53,6 +53,16 @@ $identifyUserId = function($request, $response) {
     }
 };
 
+/**
+ * Use this function to set companyId.
+ *
+ * @return string
+ */
+
+$identifyCompanyId = function($request, $response) {
+    return "12345";
+};
+
 $getMetadata = function($request, $response) {
   return array("foo"=>"laravel example", "boo"=>"custom data here");
 };
@@ -99,6 +109,7 @@ return [
     'maskResponseHeaders' => $maskResponseHeaders,
     'maskResponseBody' => $maskResponseBody,
     'identifyUserId' => $identifyUserId,
+    'identifyCompanyId' => $identifyCompanyId,
     'getMetadata' => $getMetadata,
     'identifySessionId' => $identifySessionId,
     'apiVersion' => '1.2.2',
