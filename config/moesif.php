@@ -114,6 +114,7 @@ return [
     'identifySessionId' => $identifySessionId,
     'apiVersion' => '1.2.2',
     'debug' => true,
+    'logBody' => true,
     'addTags' => $addTags,
     'skip' => $skip
 ];
