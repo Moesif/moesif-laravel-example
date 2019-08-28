@@ -2,7 +2,7 @@
 
 Laravel is a web application framework that many developers to serve APIs.
 
-Moesif is an API analyatics platform. [moesif-laravel](https://github.com/Moesif/moesif-laravel)
+Moesif is an API analyatics and monitoring platform. [moesif-laravel](https://github.com/Moesif/moesif-laravel)
 is a middleware that makes integration with Moesif easy for Laravel based applications.
 
 This is an example of laravel application with Moesif integrated.
