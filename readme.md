@@ -20,6 +20,13 @@ standard files of Laravel app.
 If you are going to run this example, please remember to go to `config/moesif.php`
 and update with application id with your actual application id.
 
+Your Moesif Application Id can be found in the [_Moesif Portal_](https://www.moesif.com/).
+After signing up for a Moesif account, your Moesif Application Id will be displayed during the onboarding steps. 
+
+You can always find your Moesif Application Id at any time by logging 
+into the [_Moesif Portal_](https://www.moesif.com/), click on the top right menu,
+and then clicking _Installation_.
+
 ## How to run.
 
 Step 1: Install all dependencies by `composer install` or `composer update`. See [composer](https://getcomposer.org) for more information. 
