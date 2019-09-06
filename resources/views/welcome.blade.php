@@ -89,7 +89,7 @@
                 </div>
 
                 <div>
-                  <p>This is an example webite for laravel with Moesif middleware (Moesif Laravel) integrated. Please see readme of this repo to see instructions</p>
+                  <p>This is an example website for laravel with Moesif middleware (Moesif Laravel) integrated. Please see the readme of this repo for instructions.</p>
                 </div>
             </div>
         </div>

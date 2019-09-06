@@ -16,6 +16,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/download', function () {
+    // Replace the storage path and file name based on your storage path and file name
+    $data = response()->download(storage_path('app/public/sample.txt'), 'sample.txt');
+    return $data;
+});
+
 Route::get('myfirstpage', function() {
     return 'hello world';
 });
