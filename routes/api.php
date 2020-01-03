@@ -39,6 +39,9 @@ Route::get('/nonjson', function (Request $request) {
       ->header('My-header-1', 'Header1 val');
 });
 
+Route::post('/users/{id}', "UsersController@updateUser");
+
+Route::post('/companies/{id}', "CompaniesController@updateCompany");
 
 Route::get('/test/{v}', 'MoesifTestApiController@index');
 
