@@ -9,7 +9,7 @@
         "laravel/framework": "5.3.*",
         "aza/thread": "~1.0",
         "laravel/passport": "^1.0",
-        "moesif/moesif-laravel": "^1.4.7"
+        "moesif/moesif-laravel": "^1.4.8"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
