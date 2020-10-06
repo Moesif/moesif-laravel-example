@@ -17,19 +17,21 @@ standard files of Laravel app.
 
 - `config/moesif.php` this is the settings for Moesif Middleware with example options.
 
+- `app/HTTP/Middleware/MoesifConfigClass.php` this is the class based configuration with additional functionality. This corresponds to the `configClass` field of the `moesif.php`. This is because `config:cache` do not support closure based config fields. For this class, You can decide the name and path to put this file depends on how you organize your code.
+
 If you are going to run this example, please remember to go to `config/moesif.php`
 and update with application id with your actual application id.
 
 Your Moesif Application Id can be found in the [_Moesif Portal_](https://www.moesif.com/).
-After signing up for a Moesif account, your Moesif Application Id will be displayed during the onboarding steps. 
+After signing up for a Moesif account, your Moesif Application Id will be displayed during the onboarding steps.
 
-You can always find your Moesif Application Id at any time by logging 
+You can always find your Moesif Application Id at any time by logging
 into the [_Moesif Portal_](https://www.moesif.com/), click on the top right menu,
 and then clicking _Installation_.
 
 ## How to run.
 
-Step 1: Install all dependencies by `composer install` or `composer update`. See [composer](https://getcomposer.org) for more information. 
+Step 1: Install all dependencies by `composer install` or `composer update`. See [composer](https://getcomposer.org) for more information.
 
 Step 2: Please follow standard [Homestead setup instructions](https://laravel.com/docs/4.2/homestead) from Laravel
 
