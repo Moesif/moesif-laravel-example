@@ -12,7 +12,6 @@ class MoesifConfigClass
 {
     public function maskRequestHeaders($headers) {
       $headers['header5'] = 'adding rather the removing, but should work the same.';
-      $headers['header6'] = 'adding rather the removing, but should work the same.';
       return $headers;
     }
 

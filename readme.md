@@ -17,7 +17,7 @@ standard files of Laravel app.
 
 - `config/moesif.php` this is the settings for Moesif Middleware with example options.
 
-- `app/HTTP/Middleware/MoesifConfigClass.php` this is the class based configuration with additional functionality. This corresponds to the `configClass` field of the `moesif.php`. This is because `config:cache` do not support closure based config fields. For this class, You can decide the name and path to put this file depends on how you organize your code.
+- `app/HTTP/Middleware/MoesifConfigClass.php` this is the class based configuration with additional functionality. This corresponds to the `configClass` field of the `moesif.php`. This is because `config:cache` do not support closure based config fields. For this class, You can decide the name and path to put this file depending on how you organize your code.
 
 If you are going to run this example, please remember to go to `config/moesif.php`
 and update with application id with your actual application id.
