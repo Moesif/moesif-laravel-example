@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'applicationId' => 'Your application Id',
+    'applicationId' => 'Your Moesif application Id',
     // You can put this config class in other name path as you see fit
     // as long as you provide the full name path.
     'configClass' => 'App\\Http\\Middleware\\MoesifConfigClass',
